@@ -1,19 +1,62 @@
-.content-1 {
-    background-color: pink;
-}
-
-.content-2 {
-    background-color: orange;
-}
-
-.content-1 h2 {
+/* ID CLASS TYPE*/
+/*0 0 1*/
+h2 {
     color: red;
 }
 
-.content-2 h2 {
+/* ID CLASS TYPE*/
+/*0 1 0 */
+.heading {
+    color: blue;
+}
+
+/* ID CLASS TYPE*/
+/* 1 0 0*/
+#heading {
     color: green;
 }
 
-.content-1 p {
-    color: blue;
+/* ID CLASS TYPE*/
+/*0 1 1*/
+h2.heading {
+    color: green;
+
+}
+
+/* ID CLASS TYPE*/
+/*1 0 0*/
+#heading {
+    color: gold;
+}
+
+
+/* ID CLASS TYPE*/
+/*1 1 1*/
+h2.heading#heading {
+    color: orange;
+}
+
+/* ID CLASS TYPE*/
+/*1 2 1*/
+section.content.block#block {
+    background-color: lightgreen;
+
+}
+
+/* ID CLASS TYPE*/
+/*1 2 0*/
+.content.block#block {
+    background-color: purple;
+}
+
+/*!important overwrites everything even specificity*/ 
+/*Not done conventionally unless have to*/
+h2 {
+    background-color: black !important;  
+}
+
+/* ID CLASS TYPE*/
+/*1 2 2*/
+section.content h2.heading#heading {
+    background-color: tomato;
 }
