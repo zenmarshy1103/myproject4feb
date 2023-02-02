@@ -11,9 +11,10 @@
     />
     <!---->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/other-styles.css"> -->
     <link rel="icon" href="./assets/images/icon.png" />
   </head>
-  <body>
+  <body class="body">
     <header>
       <!--header>nav.navigation>a*3-->
       <nav class="navigation">
@@ -24,63 +25,34 @@
       </nav>
     </header>
     <header>
-      <h1>homepage</h1>
+      <h1 class="heading">homepage</h1>
       <main>
+        <p class="paragraph" id="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit recusandae voluptatum, quis debitis repellat dolor!</p>
 
-        <!--strong: makes the text strong with bold text with more importance for the search bot-->
-        <p>Lorem <strong>Lorem, ipsum dolor.</strong>ipsum dolor, sit amet consectetur adipisicing elit. Dolore,<span class="bold">Lorem ipsum dolor sit amet..</span> accusantium.</p>
+        <section class="section">
+            <h2 class="subheading">Lorem ipsum dolor sit.</h2>
+            <h6 class="text">Lorem ipsum dolor sit amet consectetur adipisicing.</h6>
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam enim architecto reprehenderit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <button class="btn">Lorem, ipsum.</button>
+        </section>
 
-        <!--em: makes the text to be italic with more importance for the search bot-->
-        <p>Lorem ipsum dolor <em>Lorem, ipsum.</em> amet consectetur adipisicing elit. Veritatis iusto officia facilis perspiciatis? Accusantium<span class="italic">Lorem, ipsum dolor.</span> ipsam magnam vel ut placeat a.</p>
-        
-        <!-- a*3>{$}: content of number 1-99 increments -->
-        <!--
-        <a href="">1</a>
-        <a href="">2</a>
-        <a href="">3</a> -->
+        <section>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
 
-        <!--h$*6>lorem3 -->
-        <!-- 
-        <h1>Lorem, ipsum dolor.</h1>
-        <h2>Vitae, possimus beatae!</h2>
-        <h3>Fugit, veritatis nobis?</h3>
-        <h4>Libero, possimus tempore!</h4>
-        <h5>Soluta, sit voluptates.</h5>
-        <h6>Blanditiis, eum consequatur?</h6> -->
-
-        <!--!h$*6>{heading$} -->
-        <!--H1 is the most important that the web engine will recognise during searching and needs to be unique used only once and is used to show the importance of the text-->
-        <h1>heading1</h1>
-
-        <!-- These can have more than 1 occuring-->
-        <h2>heading2</h2>
-        <h3>heading3</h3>
-        <h4>heading4</h4>
-        <h5>heading5</h5>
-        <h6>heading6</h6>
-
-      
-
-        <p>
-          Lorem ipsum dolor sit
-          <span class="important">amet consectetur</span> adipisicing elit.
-          Quasi, nisi.
-        </p>
-
-        <div class="block">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, ad
-            rerum. Aliquam enim qui dolore cupiditate dignissimos, eligendi
-            molestiae dolores accusantium eveniet commodi quia provident ut
-            impedit eaque quo velit!
-          </p>
-          <p>
-            Unde, quibusdam voluptatibus. Consequatur, numquam architecto fugiat
-            maxime in maiores blanditiis repellat veritatis animi magni
-            perspiciatis voluptas quod enim et dolor odit ipsa ex minima
-            necessitatibus nemo qui esse hic.
-          </p>
+        <div class="block text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, molestias?</p>
         </div>
+
+        <!--article.group.text>p.content>lorem-->
+        <article class="group text">
+            <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, mollitia!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad perferendis soluta officiis.</p>
+        </article>
+
+        
       </main>
       <footer>
         <!--target="_blank": allow user to open to another tab -->

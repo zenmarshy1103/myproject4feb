@@ -1,19 +1,82 @@
-body {
-    background-color: lightblue;
+/* h1 {
+    color: red;
+    color: gold;
+    color: green;
 }
 
-.important {
+p {
     background-color: red;
+    background-color: yellow;
+} */ 
+
+/*CSS has its own specificity
+class and id have higher than type selectors
+id has highter specificity than class */
+/* 
+.heading {
+    color: blue;
 }
 
-.block {    
-    background-color: aqua;
+h1 {
+    color: red;
 }
 
-.bold {
-    font-weight: bold;
+body {
+    background-color: antiquewhite;
 }
 
-.italic {
-    font-style: italic;
+.body {
+    background-color: lightgreen;
+} */
+
+/* p {
+    background-color: red;
+} */
+
+/* #paragraph {
+    background-color: lightgrey;
+}
+
+.paragraph {
+    background-color: blue;
+}
+
+.section {
+    background-color: gold;
+} */
+
+/*get h6 that has class of text*/
+/* h6.text {
+    text-transform: uppercase;
+} */
+
+/*get p that has class of text*/
+/* p.text {
+    font-size: 40px;
+}
+
+.text {
+    color: yellow;
+    background-color: green;
+}  */
+
+
+/*Get the parent tag section with p tag*/
+/* .section p{
+    background-color: red;
+
+} */
+
+
+.section.text {
+    background-color: black;
+}
+
+.block.text {
+    background-color: pink;
+}
+
+article.group.text p.content {
+    color: pink;
+    background-color: black;
 }
