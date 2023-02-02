@@ -4,100 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>project 4</title>
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <title>home</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <!---->
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="icon" href="./assets/images/icon.png" />
   </head>
   <body>
     <header>
-        <nav>  <!--Just a tag to tell google that inside are going to be linked to another page-->
-            <a href="">home</a>
-            <a href="">about</a>
-            <a href="">contact</a>
-        </nav>
+      <!--header>nav.navigation>a*3-->
+      <nav class="navigation">
+        <a href="./index.html">home</a>
+        <!--Relative Path: Depends on where the item is stored in-->
+        <a href="./about.html">about</a>
+        <a href="./contact-us.html">contact</a>
+      </nav>
     </header>
-    <hr />
-    <main>
-        <!--sample quick syntax for typical artical in news site -->
+    <header>
+      <h1>homepage</h1>
+      <main>
 
-        <!--section>article>div>h2+img-->
-        <section>
-            <artical>
-                <div>
-                    <h2></h2>
-                    <img src="" alt="">
-                </div>
-            </artical>
-        </section>
-        <!--section.block>article.sub-block*2>.text*2>(h2>lorem2)+imp+(p>lorem)-->
-        <section class="block">
-            <artical class="sub-block">
-                <div class="text">
-                    <h2lorem2></h2lorem2>
-                    <imp></imp>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe labore ducimus sequi laboriosam, dignissimos commodi reprehenderit totam facere suscipit fuga explicabo distinctio perferendis quia, numquam praesentium, dolore quas natus minima?</p>
-                </div>
-                <div class="text">
-                    <h2lorem2></h2lorem2>
-                    <imp></imp>
-                    <p>Reprehenderit rerum inventore enim eveniet? Eos voluptas vel repudiandae sint, nihil non ipsa praesentium perspiciatis repellendus natus cupiditate doloribus distinctio molestiae debitis laboriosam repellat ipsam asperiores numquam maiores facere? Velit.</p>
-                </div>
-            </artical>
-            <artical class="sub-block">
-                <div class="text">
-                    <h2lorem2></h2lorem2>
-                    <imp></imp>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque labore in rerum ullam minus nemo eos voluptates debitis eum sit reprehenderit laudantium iusto nisi aliquid, omnis blanditiis sapiente. Sit, culpa!</p>
-                </div>
-                <div class="text">
-                    <h2lorem2></h2lorem2>
-                    <imp></imp>
-                    <p>Facere numquam rem quibusdam recusandae libero quia quod, dignissimos, repellat deleniti maxime consectetur, expedita necessitatibus. Vitae quisquam maxime fugit cupiditate reprehenderit, repellendus quibusdam est provident ex quia ipsum error sunt!</p>
-                </div>
-            </artical>
-        </section>
-          
+        <!--strong: makes the text strong with bold text with more importance for the search bot-->
+        <p>Lorem <strong>Lorem, ipsum dolor.</strong>ipsum dolor, sit amet consectetur adipisicing elit. Dolore,<span class="bold">Lorem ipsum dolor sit amet..</span> accusantium.</p>
 
+        <!--em: makes the text to be italic with more importance for the search bot-->
+        <p>Lorem ipsum dolor <em>Lorem, ipsum.</em> amet consectetur adipisicing elit. Veritatis iusto officia facilis perspiciatis? Accusantium<span class="italic">Lorem, ipsum dolor.</span> ipsam magnam vel ut placeat a.</p>
+        
+        <!-- a*3>{$}: content of number 1-99 increments -->
+        <!--
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a> -->
 
-      <h1>Lorem, ipsum dolor.</h1>
-      <section>
-        <article>
-          <div>
-            <h2>Lorem, ipsum.</h2>
-            <img src="" alt="" />
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-              velit. Nesciunt reiciendis ex est officia laboriosam voluptatem
-              saepe quisquam harum, minus quo, rem maiores delectus enim nostrum
-              quibusdam. Sunt explicabo exercitationem saepe eligendi vitae.
-              Possimus facilis error cupiditate, consequuntur praesentium ut sed
-              odio illo aliquam harum nesciunt rerum et debitis, suscipit
-              officia facere numquam! Iusto ab omnis eum, animi dolores
-              voluptatibus atque dolorem voluptatem culpa tempora ea quae,
-              delectus asperiores quia labore nihil voluptates deleniti voluptas
-              mollitia incidunt. Omnis ratione, iste consequuntur necessitatibus
-              repellendus accusamus voluptas quis aperiam? Corporis dolorum iste
-              suscipit, tenetur enim quam molestias exercitationem voluptates
-              pariatur recusandae?
-            </p>
-          </div>
-          <button>read more</button>
-        </article>
-        <article></article>
-      </section>
-    </main>
-    <hr />
-    <footer>
-        <nav>
-            <a href="">link1</a>
-            <a href="">link2</a>
-            <a href="">link3</a>
-            <a href="">link4</a>
-            <a href="">link5</a>
-        </nav>
-    </footer>
+        <!--h$*6>lorem3 -->
+        <!-- 
+        <h1>Lorem, ipsum dolor.</h1>
+        <h2>Vitae, possimus beatae!</h2>
+        <h3>Fugit, veritatis nobis?</h3>
+        <h4>Libero, possimus tempore!</h4>
+        <h5>Soluta, sit voluptates.</h5>
+        <h6>Blanditiis, eum consequatur?</h6> -->
+
+        <!--!h$*6>{heading$} -->
+        <!--H1 is the most important that the web engine will recognise during searching and needs to be unique used only once and is used to show the importance of the text-->
+        <h1>heading1</h1>
+
+        <!-- These can have more than 1 occuring-->
+        <h2>heading2</h2>
+        <h3>heading3</h3>
+        <h4>heading4</h4>
+        <h5>heading5</h5>
+        <h6>heading6</h6>
+
+      
+
+        <p>
+          Lorem ipsum dolor sit
+          <span class="important">amet consectetur</span> adipisicing elit.
+          Quasi, nisi.
+        </p>
+
+        <div class="block">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, ad
+            rerum. Aliquam enim qui dolore cupiditate dignissimos, eligendi
+            molestiae dolores accusantium eveniet commodi quia provident ut
+            impedit eaque quo velit!
+          </p>
+          <p>
+            Unde, quibusdam voluptatibus. Consequatur, numquam architecto fugiat
+            maxime in maiores blanditiis repellat veritatis animi magni
+            perspiciatis voluptas quod enim et dolor odit ipsa ex minima
+            necessitatibus nemo qui esse hic.
+          </p>
+        </div>
+      </main>
+      <footer>
+        <!--target="_blank": allow user to open to another tab -->
+        <a href="https://www.google.com" target="_blank">search</a>
+        <!-- Absolute path: a website path is its URL, does not change unless URL changes -->
+      </footer>
+    </header>
   </body>
 </html>

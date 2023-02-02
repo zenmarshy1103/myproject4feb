@@ -1,3 +1,19 @@
 body {
     background-color: lightblue;
 }
+
+.important {
+    background-color: red;
+}
+
+.block {    
+    background-color: aqua;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
